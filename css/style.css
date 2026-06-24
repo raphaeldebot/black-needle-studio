@@ -3,3 +3,72 @@ body{
     color: #f5f0e8;
     font-family: arial,sans-serif;
 }
+
+.navbar {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.navbar-brand {
+  color: #d4af37;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+  color: #f5f0e8;
+}
+
+.nav-link {
+  color: #f5f0e8;
+}
+
+.nav-link:hover {
+  color: #d4af37;
+}
+
+.hero {
+  min-height: calc(100vh - 58px);
+  padding: 80px 0;
+  background:
+    linear-gradient(rgba(15, 15, 15, 0.75), rgba(15, 15, 15, 0.9)),
+    radial-gradient(circle at right, rgba(212, 175, 55, 0.25), transparent 35%),
+    #0f0f0f;
+}
+
+.hero-label {
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  color: #d8d0c2;
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin-bottom: 32px;
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  color: #0f0f0f;
+  border: 1px solid #d4af37;
+  font-weight: 700;
+}
+
+.btn-gold:hover {
+  background-color: #f5f0e8;
+  border-color: #f5f0e8;
+  color: #0f0f0f;
+}
