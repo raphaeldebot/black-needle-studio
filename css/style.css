@@ -250,3 +250,63 @@ body {
 .gallery-item:hover .gallery-overlay {
   opacity: 1;
 }
+
+.artists-section {
+  background-color: #0f0f0f;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.artist-card {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.artist-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.artist-image {
+  aspect-ratio: 4 / 4.6;
+  overflow: hidden;
+}
+
+.artist-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.artist-content {
+  padding: 20px 24px 22px;
+}
+
+.artist-content h3 {
+  margin-bottom: 6px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f5f0e8;
+}
+
+.artist-role {
+  color: #d4af37;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.artist-text {
+  color: #d8d0c2;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.scroll-target {
+  scroll-margin-top: 290px;
+}
