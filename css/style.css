@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #0f0f0f;
     color: #f5f0e8;
@@ -309,4 +313,86 @@ body {
 
 .scroll-target {
   scroll-margin-top: 290px;
+}
+
+.reviews-section {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.08), transparent 25%),
+    #0b0b0b;
+}
+
+.review-card {
+  position: relative;
+  padding: 32px;
+  border-radius: 22px;
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  background: rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(212, 175, 55, 0.4);
+}
+
+.review-stars {
+  color: #d4af37;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.review-text {
+  color: #f5f0e8;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.review-author {
+  color: #d8d0c2;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.booking-section {
+  background:
+    radial-gradient(circle at 80% 30%, rgba(212, 175, 55, 0.08), transparent 25%),
+    #0f0f0f;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.booking-form {
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.booking-form .form-label {
+  color: #f5f0e8;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.booking-form .form-control,
+.booking-form .form-select {
+  background-color: #151515;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  color: #f5f0e8;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.booking-form .form-control::placeholder {
+  color: rgba(245, 240, 232, 0.45);
+}
+
+.booking-form .form-control:focus,
+.booking-form .form-select:focus {
+  background-color: #151515;
+  color: #f5f0e8;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.15);
 }
