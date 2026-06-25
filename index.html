@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#artistes-list">Artistes</a>
+                    <a class="nav-link" href="#artistes">Artistes</a>
                 </li>
 
                 <li class="nav-item">
@@ -643,10 +643,10 @@
 
                 <div class="col-md-6">
                     <ul class="footer-links">
-                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#styles">Styles</a></li>
                         <li><a href="#galerie">Galerie</a></li>
-                        <li><a href="#artistes-list">Artistes</a></li>
+                        <li><a href="#artistes">Artistes</a></li>
                         <li><a href="#reservation">Réservation</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -687,26 +687,14 @@
     </script>
 
     <script>
+        const sections = document.querySelectorAll("section[id]");
         const navLinks = document.querySelectorAll(".navbar .nav-link");
 
-        const observedTargets = [];
-
-        navLinks.forEach(function (link) {
-            const href = link.getAttribute("href");
-
-            if (href && href.startsWith("#") && href.length > 1) {
-                const target = document.querySelector(href);
-
-                if (target && !observedTargets.includes(target)) {
-                    observedTargets.push(target);
-                }
-            }
-        });
-
-        function setActiveLink(targetId) {
+        function setActiveLink(sectionId) {
             navLinks.forEach(function (link) {
                 const href = link.getAttribute("href");
-                link.classList.toggle("active", href === "#" + targetId);
+
+                link.classList.toggle("active", href === "#" + sectionId);
             });
         }
 
@@ -725,8 +713,8 @@
             }
         );
 
-        observedTargets.forEach(function (target) {
-            observer.observe(target);
+        sections.forEach(function (section) {
+            observer.observe(section);
         });
     </script>
 
